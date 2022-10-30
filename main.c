@@ -5,14 +5,14 @@ int main(void)
     printf("Enter score: ");
     scanf("%d", &score);
     if (score >= 90)
-        printf("A");
+        printf("A\n");
     else if (score >= 80)
-        printf("B");
+        printf("B\n");
     else if (score >= 70)
-        printf("C");
+        printf("C\n");
     else if (score >= 60)
-        printf("D");
+        printf("D\n");
     else
-        printf("F");
+        printf("F\n");
     return 0;
 }
