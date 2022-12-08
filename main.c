@@ -3,8 +3,14 @@ int main(void)
 {
     int score;
     printf("Enter score: ");
-    scanf("%d", &score);
-    if (score >= 90)
+    if (scanf("%d", &score) != 1)
+    {
+        printf("Invalid input\n");
+        return 1;
+    }
+    if (score < 0 || score > 100)
+        printf("Invalid score\n");
+    else if (score >= 90)
         printf("A\n");
     else if (score >= 80)
         printf("B\n");
